@@ -5,6 +5,6 @@ if index == 0 && board = []
 elsif index = nil
   return false
 else index == "X" || index == "O"
-  true 
+  return true 
 end
 end
