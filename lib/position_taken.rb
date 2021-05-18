@@ -1,10 +1,14 @@
 # code your #position_taken? method here!
+require 'pry'
 def position_taken?(board, index)
-if index == 0 && board = []
+  # binding.pry
+if board[index] == " "
   return false
-elsif index = nil
+elsif board[index] == ""
   return false
-else index == "X" || index == "O"
-  true 
+elsif board[index] == nil
+  return false
+else board[index] == "X" || board[index] == "O"
+  return true
 end
 end
