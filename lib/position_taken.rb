@@ -2,11 +2,13 @@
 require 'pry'
 def position_taken?(board, index)
   binding.pry
-if index == 0 && board = []
+if board[index] == " "
+  return false
+elsif board[index] == ""
   return false
 elsif board[index] == nil
   return false
-else index == "X" || index == "O"
+else board[X] || board[O]
   return true
 end
 end
